@@ -53,14 +53,15 @@ FEATURES
 
 USAGE
 
-1.Deploying the Contract
+1. Deploying the Contract
 
 To deploy the contract, use a development environment like Remix or a framework like Truffle.
 
-2.Interacting with the Contract
+2. Interacting with the Contract
 You can interact with the contract functions using web3.js, ethers.js, or directly through the Remix IDE.
 
 * Minting Tokens:
+  
 ~Solidity
 
   function mint(address recipient, uint amount) public;
@@ -69,6 +70,7 @@ You can interact with the contract functions using web3.js, ethers.js, or direct
 await contract.methods.mint("0xRecipientAddress", 100).send({ from: "0xYourAddress" });
 
 *Burning Tokens:
+
 ~Solidity
 
 function burn(address sender, uint amount) public;
