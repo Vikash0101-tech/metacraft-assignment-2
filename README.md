@@ -62,6 +62,7 @@ You can interact with the contract functions using web3.js, ethers.js, or direct
 
 * Minting Tokens:
 ~Solidity
+
   function mint(address recipient, uint amount) public;
 
   example(javascripy):
@@ -69,6 +70,7 @@ await contract.methods.mint("0xRecipientAddress", 100).send({ from: "0xYourAddre
 
 *Burning Tokens:
 ~Solidity
+
 function burn(address sender, uint amount) public;
 
 example(javascript):
